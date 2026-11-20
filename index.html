@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Doğukan Bağcı | Foundation Model Interpretability</title>
+<title>Foundation Model Interpretability | Doğukan Bağcı</title>
 <meta name="description" content="Doğukan Bağcı is a PhD student at the Max Planck Institute for Informatics studying foundation model interpretability and its applications in computer vision.">
 <link rel="canonical" href="https://dogukanbg.github.io/">
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Doğukan Bağcı | Foundation Model Interpretability">
+<meta property="og:title" content="Foundation Model Interpretability | Doğukan Bağcı">
 <meta property="og:description" content="Doğukan Bağcı is a PhD student at the Max Planck Institute for Informatics studying foundation model interpretability and its applications in computer vision.">
 <meta property="og:url" content="https://dogukanbg.github.io/">
 <meta property="og:image" content="https://dogukanbg.github.io/images/profile.jpg">
@@ -30,7 +30,8 @@
     "sameAs": [
       "https://scholar.google.com/citations?user=Jli3NlYAAAAJ&hl=de",
       "https://www.linkedin.com/in/dogukan-b-1b4a29211",
-      "https://github.com/DogukanBG"
+      "https://github.com/DogukanBG",
+      "https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/people/dogukan-bagci"
     ]
   }
 }
@@ -124,6 +125,7 @@
     text-transform: uppercase; color: var(--gray); margin-top: .35rem;
   }
   .pub .venue .badge { border: 1px solid var(--ink); color: var(--ink); padding: .05rem .35rem; margin-left: .3rem; }
+  .pub .summary { font-size: .98rem; line-height: 1.5; margin: .45rem 0 0; }
   .pub .refs { font-family: var(--sans); font-size: .79rem; margin-top: .4rem; }
   .pub .refs a { margin-right: .85rem; }
 
@@ -152,7 +154,7 @@
 
   <!-- ── rail ── -->
   <aside class="rail">
-    <img src="images/profile.jpg" alt="Doğukan Bağcı" width="1140" height="1514">
+    <img src="images/profile-small.jpg" alt="Doğukan Bağcı" width="289" height="384">
     <h1>Doğukan Bağcı</h1>
     <div class="role">
       PhD Student<br>
@@ -160,13 +162,14 @@
       Saarbrücken, Germany
     </div>
     <nav>
-      <a href="#news">News</a>
       <a href="#publications">Publications <span>2</span></a>
+      <a href="#news">News</a>
       <a href="#awards">Awards</a>
-      <a href="cv.pdf">Download CV <span>PDF</span></a>
+      <a href="cv.pdf">CV (PDF)</a>
       <a href="https://scholar.google.com/citations?user=Jli3NlYAAAAJ&hl=de">Google Scholar</a>
       <a href="https://www.linkedin.com/in/dogukan-b-1b4a29211">LinkedIn</a>
       <a href="https://github.com/DogukanBG">GitHub</a>
+      <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/people/dogukan-bagci">MPI Profile</a>
       <a href="https://people.mpi-inf.mpg.de/people/">E-Mail</a>
     </nav>
   </aside>
@@ -191,34 +194,36 @@
       Learning and Intelligent Systems (ELIZA)</a>.
     </p>
 
-    <h2 id="news">News</h2>
-    <div class="row"><div class="when">July 2026</div><div class="what">Attending <strong>ICML 2026</strong> in Seoul, Korea.</div></div>
-    <div class="row"><div class="when">April 2026</div><div class="what">I started my PhD!</div></div>
-    <div class="row"><div class="when">Mar 2026</div><div class="what">Attending the <a href="https://ivi.fnwi.uva.nl/ellis/events/winter-school-on-foundation-models-fomo-2026-registration-opens-on-14-november-2025/"><strong>ELLIS Winter School on Foundation Models (FoMo) 2026</strong></a> in Amsterdam.</div></div>
-    <div class="row"><div class="when">Jan 2026</div><div class="what">Our paper <strong>"Beyond Accuracy"</strong> was accepted at <a href="https://visinf.github.io/beyond-accuracy/">TMLR 2026</a> and received a <strong>Featured Certification</strong>!</div></div>
-    <div class="row"><div class="when">Oct 2025</div><div class="what">Started my research internship at the <strong>Max Planck Institute for Informatics</strong> in Saarbrücken, working on my master's thesis.</div></div>
-    <div class="row"><div class="when">Mar 2025</div><div class="what">Joined the <strong>Konrad Zuse School of Excellence ELIZA</strong> as a graduate student and scholarship holder.</div></div>
-    <div class="row"><div class="when">Feb 2025</div><div class="what">Started my exchange semester at <strong>ETH Zurich</strong> &amp; <strong>University of Zurich</strong>.</div></div>
-
     <h2 id="publications">Publications</h2>
 
-    <div class="pub">
+    <div class="pub" id="dune">
       <h3>DUNE: Disentangling Polysemantic Neurons Without Losing Predictive Performance</h3>
       <div class="authors"><strong>Doğukan Bağcı</strong>, Bernt Schiele, Simone Schaub-Meyer, Jonas Fischer, Robin Hesse</div>
       <div class="venue">arXiv 2026</div>
+      <p class="summary">DUNE disentangles foundation model neurons into more monosemantic subunits while preserving their original function by design.</p>
       <div class="refs"><a href="https://arxiv.org/abs/2605.31304">Read DUNE on arXiv</a></div>
     </div>
 
-    <div class="pub">
+    <div class="pub" id="beyond-accuracy">
       <h3>Beyond Accuracy: What Matters in Designing Well-Behaved Image Classification Models?</h3>
       <div class="authors">Robin Hesse*, <strong>Doğukan Bağcı*</strong>, Bernt Schiele, Simone Schaub-Meyer, Stefan Roth<br><em>* Equal contribution</em></div>
       <div class="venue">TMLR 2026 <span class="badge">Featured Certification</span></div>
+      <p class="summary">We study nine dimensions of image classification quality, including robustness, calibration, and fairness. We analyze 326 backbone models to see how different scales, training recipes, and model architectures affect these dimensions.</p>
       <div class="refs">
         <a href="https://arxiv.org/abs/2503.17110">Read Beyond Accuracy on arXiv</a>
         <a href="https://github.com/visinf/beyond-accuracy">Code</a>
         <a href="https://visinf.github.io/beyond-accuracy/">Project Page</a>
       </div>
     </div>
+
+    <h2 id="news">News</h2>
+    <div class="row"><div class="when">July 2026</div><div class="what">Attended <strong>ICML 2026</strong> in Seoul, Korea.</div></div>
+    <div class="row"><div class="when">April 2026</div><div class="what">I started my PhD!</div></div>
+    <div class="row"><div class="when">Mar 2026</div><div class="what">Attended the <a href="https://ivi.fnwi.uva.nl/ellis/events/winter-school-on-foundation-models-fomo-2026-registration-opens-on-14-november-2025/"><strong>ELLIS Winter School on Foundation Models (FoMo) 2026</strong></a> in Amsterdam.</div></div>
+    <div class="row"><div class="when">Jan 2026</div><div class="what">Our paper <strong>"Beyond Accuracy"</strong> was accepted at <a href="https://visinf.github.io/beyond-accuracy/">TMLR 2026</a> and received a <strong>Featured Certification</strong>!</div></div>
+    <div class="row"><div class="when">Oct 2025</div><div class="what">Started my research internship at the <strong>Max Planck Institute for Informatics</strong> in Saarbrücken, working on my master's thesis.</div></div>
+    <div class="row"><div class="when">Mar 2025</div><div class="what">Joined the <strong>Konrad Zuse School of Excellence ELIZA</strong> as a graduate student and scholarship holder.</div></div>
+    <div class="row"><div class="when">Feb 2025</div><div class="what">Started my exchange semester at <strong>ETH Zurich</strong> &amp; <strong>University of Zurich</strong>.</div></div>
 
     <h2 id="awards">Awards &amp; Honors</h2>
     <div class="row"><div class="when">2026</div><div class="what"><strong>Featured Certification</strong> — TMLR, for "Beyond Accuracy: What Matters in Designing Well-Behaved Image Classification Models?"</div></div>
@@ -233,6 +238,7 @@
       <a href="https://scholar.google.com/citations?user=Jli3NlYAAAAJ&hl=de">Google Scholar</a> ·
       <a href="https://www.linkedin.com/in/dogukan-b-1b4a29211">LinkedIn</a> ·
       <a href="https://github.com/DogukanBG">GitHub</a> ·
+      <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/people/dogukan-bagci">MPI Profile</a> ·
       <a href="https://people.mpi-inf.mpg.de/people/">E-Mail</a>
     </footer>
 
